@@ -1,0 +1,63 @@
+:root {
+	color-scheme: dark;
+	font-family: sans-serif;
+
+	--space--sm: .5rem;
+	--space--md: 1rem;
+	--space--lg: 2rem;
+	--space--xl: 3rem;
+
+	--color--neutral--000: Canvas;
+	--color--neutral--250: Field;
+	--color--neutral--750: GrayText;
+	--color--neutral--900: CanvasText;
+	--color--primary: LinkText;
+
+	--color--base: var(--color--neutral--000);
+	--color--base--light: var(--color--neutral--250);
+	--color--contrast: var(--color--neutral--900);
+	--color--contrast--light: var(--color--neutral--750);
+
+}
+
+body{ margin: 0 }
+
+main {
+	max-width: 40rem;
+	border-top: var(--space--xl) solid var(--color--primary);
+	padding: 0 var(--space--xl);
+	margin: 0 var(--space--xl);
+}
+
+h1 {
+	text-align:  center;
+	margin: var(--space--xl) 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-size: 1rem;
+	letter-spacing: -.01em;
+}
+h2 { margin: var(--space--lg) 0 }
+h3, h4, h5, h6 {
+	margin: var(--space--lg) 0 var(--space--lg) var(--space--md);
+	font-weight: normal;
+}
+
+p {
+	text-align: justify;
+	font-size: .9rem;
+	line-height: 1.25rem;
+	letter-spacing: .025em;
+	margin: var(--space--md) 0 var(--space--md) var(--space--lg);
+}
+
+code { background-color: var(--color--base--light) }
+
+pre {
+	background-color: var(--color--base--light);
+	padding: var(--space--sm);
+	border-radius: var(--space--sm);
+	border: 1px solid var(--color--contrast--light);
+	margin: var(--space--md) 0 var(--space--md) var(--space--lg);
+}
