@@ -55,6 +55,7 @@ p {
 code { background-color: var(--color--base--light) }
 
 pre {
+	overflow-x: scroll;
 	background-color: var(--color--base--light);
 	padding: var(--space--sm);
 	border-radius: var(--space--sm);
